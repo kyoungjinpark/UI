@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Title </title>
+    <script type="text/javascript">
+        function popClose(){
+            self.close();
+        }
+        
+        function popClose2(){
+            self.close();
+            alert("아직 구현되지 않은 기능입니다.");
+        }
+    </script>
+</head>
+
+<body>
+<table width="700">
+    <tr>
+        <th>회원가입
+            
+        </th>
+    </tr>
+    
+    <tr>
+        <td>
+            <table width="100%" bgcolor="black" cellpadding="5" cellspacing="1" border="0">
+                <tr>
+                    <td width="20%" bgcolor="#cacaca">
+                        &nbsp;이름
+                    </td>
+                    <td width="*" bgcolor="white">
+                        <input type="text" value="" placeholder="성" size="5" tabindex="1">
+                        <input type="text" value="" placeholder="이름" size="10" tabindex="2">
+                        남<input type="radio" name="gender"> 여<input type="radio" name="gender">
+                    </td>
+                </tr>
+                <tr>
+                    <td width="20%" bgcolor="#cacaca">
+                        &nbsp;아이디
+                    </td>
+                    <td width="*" bgcolor="white">
+                        <input type="text" value="" placeholder="아이디" size="10" tabindex="5">
+                        <input type="button" value="중복확인" tabindex="6">
+                    </td>
+                </tr>
+                <tr>
+                    <td width="20%" bgcolor="#cacaca">
+                        &nbsp;비밀번호
+                    </td>
+                    <td width="*" bgcolor="white">
+                        <input type="password" value="" size="20" placeholder="비밀번호" tabindex="7"> * 영문과 숫자 조합으로 8자리 이상
+                    </td>
+                </tr>
+                <tr>
+                    <td width="20%" bgcolor="#cacaca">
+                        &nbsp;비밀번호 확인
+                    </td>
+                    <td width="*" bgcolor="white">
+                        <input type="password" value="" size="20" placeholder="비밀번호 확인" tabindex="8">
+                    </td>
+                </tr>
+                <tr>
+                    <td width="20%" bgcolor="#cacaca">
+                        &nbsp;생년월일
+                    </td>
+                    <td width="*" bgcolor="white">
+                        <input type="text" value="" size="5" tabindex="9"> 년
+                        <select style="width: 54px;height: 21px;">
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                            <option value="">5</option>
+                            <option value="">6</option>
+                            <option value="">7</option>
+                            <option value="">8</option>
+                            <option value="">9</option>
+                            <option value="">10</option>
+                            <option value="">11</option>
+                            <option value="">12</option>
+                        </select>
+                        월 <input type="text" value="" size="3" tabindex="10"> 일
+                    </td>
+                </tr>
+                <tr>
+                    <td width="20%" bgcolor="#cacaca">
+                        &nbsp;전화번호
+                    </td>
+                    <td width="*" bgcolor="white">
+                    <label>010</label>
+                    - <input type="text" size="3" maxlength="4" tabindex="11">
+                    - <input type="text" size="3" maxlength="4" tabindex="12">
+                    휴대폰 정보 수신 동의 <input type="checkbox" tabindex="13">
+                    </td>
+                </tr>
+                <tr>
+                    <td width="20%" bgcolor="#cacaca">
+                        &nbsp;이메일
+                    </td>
+                    <td width="*" bgcolor="white">
+                        <input type="text" size="10" placeholder="아이디" tabindex="14">
+                        <select>
+                            <option value="gmail.com">gmail.com </option>
+                            <option value="naver.com" selected="selected">naver.com</option>
+                        </select>
+                        sns정보 수신 동의 <input type="checkbox" tabindex="15">
+                    </td>
+                </tr>
+                <tr>
+                    <td width="20%" bgcolor="#cacaca">
+                        &nbsp;주소
+                    </td>
+                    <td width="*" bgcolor="white">
+                         <input type="text" size="3" readonly="readonly" > -
+                         <input type="text" size="3" readonly="readonly" >
+                         <input type="button" value="우편번호 검색" /><br/>
+                         <input type="text" size="20" placeholder="주소">
+                         <input type="text" size="35" value="상세 주소">
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td align="center" style="padding: 10px;">
+        <button onclick="javascript:popClose2();">회원가입</button>
+        <button onclick="javascript:popClose();">닫기</button>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

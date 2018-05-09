@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Title </title>
+    <style>
+        h1 {text-align: center;}
+        form {
+            width: 40%;
+            margin-left: 30%;
+        }
+        input {width: 100%;}
+        #myPage {
+            display: none;
+        }
+        p {
+            height: 30px;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="login.js"></script>
+	<script type="text/javascript">
+        $(Document).ready(function(){
+            $("form").submit(eventOn);
+        });
+    </script>
+</head>
+
+<body>
+    <section id="login_home">
+        <h1>로그인</h1>
+        <form id="login">
+            <input type="text" name="id" id="id" value="" placeholder=" 아이디를 입력하세요." style="height: 40px;">
+            <br>
+            <br>
+            <input type="password" name="pw" id="pw" value="" placeholder=" 비밀번호를 입력하세요." style="height: 40px;">
+            <br>
+            <br>
+            <input type="submit" value="로그인" style="width: 25%; height: 40px; margin:0 3.5%;">
+            <button onclick="javascript:memberOpen();" style="width: 25%; height: 40px;margin:0 3.5%;">회원가입</button>
+            <button onclick="javascript:returnOpen();" style="width: 25%; height: 40px;margin:0 3.5%;">돌아가기</button>
+        </form>
+    </section>
+    <section id="myPage">
+        <h1>임시 페이지입니다.</h1>
+        <p>ID : <span id="userId"></span></p>
+        <p>PW : <span id="userPw"></span></p>
+        <button onclick="javascript:returnOpen();" style="width: 25%; height: 30px;margin:0 25px;">돌아가기</button>
+    </section>
+</body>
+</html>
