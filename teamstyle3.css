@@ -3,24 +3,22 @@
     display: none;
 }
 
-
 #div2 {
-    background-color: lightpink;
-    width: 100%;
-    height: 10vh;
-    float: left;
+    height: 14vh;
 }
 
-#div5 {
-    display: none;
+#icon {
+    width: 30px;
+    height: 40px;
+    margin: calc((14vh - 40px) / 2) 10px;
 }
 
 #div3 {
     width: 100%;
-    height: 55vh;
+    height: 43vh;
 }
 
 #div4 {
     width: 100%;
-    height: 35vh;
+    height: 43vh;
 }
