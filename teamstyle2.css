@@ -3,6 +3,10 @@
     height: 12.5vh;
 }
 
+#topMenu a {
+    font-size: 0.7em;
+}
+
 #div1_left {
     height: 12.5vh;
 }
@@ -47,11 +51,11 @@
 #icon:hover {
 }
 
-ul {
+#div2 ul {
     display:none;
 }
 
-li {
+#div2 li {
     display: none;
 }
 
@@ -65,37 +69,4 @@ li {
 
 #div4 {
     width: 50%;   
-}
-#div3 ul, #div4 ul {
-    width: 100%;
-    float: left;
-    list-style: none;
-    padding-left: 0;
-}
-#div3 li, #div4 li {
-    display: inline-block;
-    float: left;
-    width: 50vw;
-    height: calc(30vw - 20px);
-    padding: 10px;
-}
-#div3 div, #div4 div{
-    width: 100%;
-    height: 100%;            
-    position: relative;
-    overflow: hidden;
-}
-#div3 img, #div4 img {
-    position: absolute;
-    width: 50%;
-    top: 50%;
-    left: 40%;
-    transform: translate(-80%, -50%);
-}
-#div3 p, #div4 p {
-    position: absolute;
-    width: 45%;
-    top: 50%;
-    left: 30%;
-    transform: translate(50%, -50%);
 }

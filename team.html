@@ -3,19 +3,49 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+       function eventAction(){           
+           document.getElementById("flist1").style.display = "none";
+           document.getElementById("fList2").style.display = "block";
+           document.getElementById("flist3").style.display = "none";
+           document.getElementById("fList4").style.display = "block";
+                      
+       }
+    </script>
 <link rel="stylesheet" type="text/css" href="teamstyle.css">
-<link rel="stylesheet" type="text/css" media="only screen and (max-width: 992px)" href="teamstyle2.css">
-<link rel="stylesheet" type="text/css" media="only screen and (max-width: 768px)" href="teamstyle3.css">
+<link rel="stylesheet" type="text/css" media="only screen and (max-width: 768px)" href="teamstyle2.css">
+<link rel="stylesheet" type="text/css" media="only screen and (max-width: 450px)" href="teamstyle3.css">
+
 	<title> Title </title>
 </head>
 <body>   
     <div id="div1">
         <nav>
-            <div id="div1_left">
-                <a href="team.html">Vánity Fáir</a>
-                <a href="#">브랜드체크</a>
+            <div id="topMenu">
+                <ul id="firstMenu">
+                    <li><a href="team.html">Vánity Fáir</a></li>
+                    <li><a>BRAND</a>
+                        <ul class="thirdMenu">
+                            <li><a>|</a></li>
+                            <li><a href="https://www.rolex.com/" target="_blank">W:Rolex</a></li>
+                            <li><a>|</a></li>
+                            <li><a href="https://www.blancpain.com/" target="_blank">W:Blanc Pain</a></li>
+                            <li><a>|</a></li>
+                            <li><a href="https://www.patek.com/en/home" target="_blank">W:Patek Philippe</a></li>                   <li><a>|</a></li>
+                            <li><a href="https://www.harrywinston.com/" target="_blank">W:Harry Winston</a></li>
+                            <li><a>|</a></li>
+                            <li><a href="https://www.chanel.com/" target="_blank">B:Chanel</a></li>
+                            <li><a>|</a></li>
+                            <li><a href="https://www.gucci.com/" target="_blank">B:Gucci</a></li>
+                            <li><a>|</a></li>
+                            <li><a href="https://www.hermes.com/" target="_blank">B:Hermes</a></li>
+                            <li><a>|</a></li>
+                            <li><a href="https://www.prada.com/" target="_blank">B:Prada</a></li>    
+                        </ul>
+                    </li>
+                </ul>
             </div>
-            <div id="div1_right">
+            <div id="login">
                 <a href="login.html">로그인</a>
             </div>
         </nav>
@@ -29,7 +59,7 @@
 		    </form>
         </div>
         <div id="ranking">
-            <a href="#">대여인기순위</a>
+            <a href="#" onsubmit="eventAction(); return false;">대여인기순위</a>
         </div>
         <div id="icon">
             <ul>서비스 안내
@@ -54,6 +84,7 @@
     </div> 
         
     <div id="div3">
+       <section id ="fList" >
         <h1>인기 가방 리스트</h1>
            <ul>            
             <li>                       
@@ -87,9 +118,12 @@
             </div>
             </li>            
            </ul>
+        </section>
+        <section id = "fList2"></section>
     </div>    
     
     <div id="div4">
+       <section id ="fList3" >
         <h1>인기 시계 리스트</h1>
            <ul>
             <li>
@@ -123,6 +157,8 @@
             </div>
                </li>
         </ul>
+        </section>
+        <section id="fList4"></section>
     </div>
     
     <div id="div5">
