@@ -14,9 +14,9 @@ html, body, h1, h2, h5, hr{
     
 }
 .article{
-    width: 100%;
-    background-color: rgba(226, 118, 98, 0.1);   
-    padding-top: 30px ;
+    width: 95%;     
+    padding-top: 25px ;
+    padding-left: 5px ;
     float: left;      
 }
 .use {
@@ -28,14 +28,10 @@ html, body, h1, h2, h5, hr{
     float: right;
     display: inline-block;
     padding: 0;       
-}
-    
+}    
 }
 #div2 {
     background-color: rgba(226, 118, 98, 0.1);
-}
-#sub {
-    float: left;      
 }
 #div3 {
     clear: both;
