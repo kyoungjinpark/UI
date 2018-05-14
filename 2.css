@@ -27,8 +27,19 @@
 }
 #qa_btitle { 
     margin: 40px;
+    margin-right: 0;
     margin-bottom: 0;
-    width: calc(100% - 80px);
+    width: calc(40% - 40px);
+}
+#qa_bsearch {
+    margin: 40px;
+    margin-left: 0;
+    margin-bottom: 0;
+    width: calc(60% - 40px);
+}
+#qa_bsinput {
+    width: 120px;
+    height: 20px;
 }
 #qa_board table {
     margin: 0 40px;

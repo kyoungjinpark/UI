@@ -60,9 +60,35 @@ html, body {
 }
 #qa_btitle { 
     margin: 50px;
+    margin-right: 0;
     margin-bottom: 0;
-    width: calc(100% - 100px);
+    width: calc(50% - 50px);
     height: 50px;
+    display: inline-block;
+    float: left;
+}
+#qa_btitle h3 {
+    margin: 0;
+}
+#qa_bsearch {
+    margin: 50px;
+    margin-left: 0;
+    margin-bottom: 0;
+    width: calc(50% - 50px);
+    height: 50px;
+    display: inline-block;
+    float: left;
+    text-align: right;
+}
+#qa_bsinput {
+    width: 160px;
+    height: 20px;
+}
+#qa_bsbutton {
+    background-color: white;
+    height: 26px;
+    border-radius: 5px;
+    padding: 0 10px;
 }
 #qa_board table {
     margin: 0 50px;
