@@ -1,0 +1,40 @@
+html, body, h1, h2, h4, hr{
+    margin: 0;     
+}
+#div1 {
+    height: 30vh; 
+    background-color: rgba(226, 118, 98, 0.1);
+    text-align: left;
+    font-family: arial;
+    padding-left: 10px;
+}
+#upper {
+    background-color: rgba(226, 118, 98, 0.1);
+    display: inline-block;
+    
+}
+.explain{
+    width: 95%;     
+    padding-top: 25px ;
+    padding-left: 5px ;
+    float: left;      
+}
+.use {
+    width: 60%;
+    display: inline-block;
+}
+
+.c_photo {
+    float: right;
+    display: inline-block;
+    padding: 0;       
+}    
+}
+#upper {
+    background-color: rgba(226, 118, 98, 0.1);
+}
+#middle {
+    clear: both;
+    height: 100vh; 
+    background-color: cornflowerblue;
+}

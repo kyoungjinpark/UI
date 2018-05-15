@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="cost.css">
+<script src="lib/jquery.min.js"></script>
+	<style>
+        ul {padding-left: 0; list-style: none;}
+    </style>
+    <script>
+        $(document).ready(function(){
+           var list = [
+               {key:"Chanel", model:"tod", daycost: "72000원", weekdays: "21600원~", weekend: "36,000원~", over:"3,240원~"},
+               {key:"Gucci", model:"tod", daycost: "72000원", weekdays: "21600원~", weekend: "36,000원~", over:"3,240원~"},
+               {key:"Prada", model:"tod", daycost: "72000원", weekdays: "21600원~", weekend: "36,000원~", over:"3,240원~"},
+               {key:"Hermes", model:"tod", daycost: "72000원", weekdays: "21600원~", weekend: "36,000원~", over:"3,240원~"},
+               {key:"Lousi vutton", model:"tod", daycost: "72000원", weekdays: "21600원~", weekend: "36,000원~", over:"3,240원~"}
+           ];
+           list.forEach(function(row){
+               //$("ul").append("<li>" + row.key + ") " + row.title + "</li>");
+               
+               var html = "";
+               html += '<tr>';
+               html += ' <td style="text-align: center; width: 20%;">'+row.key+'</td>';
+               html += ' <td style="width: 10%;">'+row.model+'</td>';
+                html += ' <td style="width: 10%;">'+row.daycost+'</td>';
+                html += ' <td style="width: 10%;">'+row.weekdays+'</td>';
+                html += ' <td style="width: 10%;">'+row.weekend+'</td>';
+                html += ' <td style="width: 10%;">'+row.over+'</td>';
+               html += '</tr>';
+               $("#BdataTable").append(html);
+           });
+            var flag = true;
+            $("#sort").on("click", function(){
+               $("#BdataTable").empty();
+               list.forEach(function(row){               
+                var html = "";
+                 html += '<tr>';
+               html += ' <td style="text-align: center; width: 20%;">'+row.key+'</td>';
+               html += ' <td style="width: 10%;">'+row.model+'</td>';
+                html += ' <td style="width: 10%;">'+row.daycost+'</td>';
+                html += ' <td style="width: 10%;">'+row.weekdays+'</td>';
+                html += ' <td style="width: 10%;">'+row.weekend+'</td>';
+                html += ' <td style="width: 10%;">'+row.over+'</td>';
+               html += '</tr>';
+                if(flag){
+                    $("#BdataTable").prepend(html);
+                }else {
+                    $("#BdataTable").append(html);
+                }
+                
+              });
+                flag = !flag;
+            });
+        });
+        
+        $(document).ready(function(){
+           var Wlist = [
+               {key:"Patek Philippe", model:"watch", daycost: "72000원", weekdays: "21600원~", weekend: "36,000원~", over:"3,240원~"},
+               {key:"Vacheron Constantin", model:"watch", daycost: "72000원", weekdays: "21600원~", weekend: "36,000원~", over:"3,240원~"},
+               {key:"Audemars Piguet", model:"watch", daycost: "72000원", weekdays: "21600원~", weekend: "36,000원~", over:"3,240원~"},
+               {key:"Breguet", model:"watch", daycost: "72000원", weekdays: "21600원~", weekend: "36,000원~", over:"3,240원~"},
+               {key:"Blancpain", model:"watch", daycost: "72000원", weekdays: "21600원~", weekend: "36,000원~", over:"3,240원~"}
+           ];
+           Wlist.forEach(function(row){
+               //$("ul").append("<li>" + row.key + ") " + row.title + "</li>");
+               
+               var html = "";
+               html += '<tr>';
+               html += ' <td style="text-align: center; width: 20%;">'+row.key+'</td>';
+               html += ' <td style="width: 10%;">'+row.model+'</td>';
+                html += ' <td style="width: 10%;">'+row.daycost+'</td>';
+                html += ' <td style="width: 10%;">'+row.weekdays+'</td>';
+                html += ' <td style="width: 10%;">'+row.weekend+'</td>';
+                html += ' <td style="width: 10%;">'+row.over+'</td>';
+               html += '</tr>';
+               $("#WdataTable").append(html);
+           });
+            var flag = true;
+            $("#sort").on("click", function(){
+               $("#WdataTable").empty();
+               list.forEach(function(row){               
+                var html = "";
+                 html += '<tr>';
+               html += ' <td style="text-align: center; width: 20%;">'+row.key+'</td>';
+               html += ' <td style="width: 10%;">'+row.model+'</td>';
+                html += ' <td style="width: 10%;">'+row.daycost+'</td>';
+                html += ' <td style="width: 10%;">'+row.weekdays+'</td>';
+                html += ' <td style="width: 10%;">'+row.weekend+'</td>';
+                html += ' <td style="width: 10%;">'+row.over+'</td>';
+               html += '</tr>';
+                if(flag){
+                    $("#WdataTable").prepend(html);
+                }else {
+                    $("#WdataTable").append(html);
+                }
+                
+              });
+                flag = !flag;
+            });
+        });
+    </script>
+</head>
+
+    <body>
+        <div id="div1">
+            <h2>Vanity fair가 합리적인 이유!</h2>
+            <h1>알고보면 더 경제적이고 합리적인</h1>
+            <h1>Vanity fair의 이용요금</h1>
+            <h4>1시간 단위 예약이 가능해 더 경제적이고 합리적인 Vanity fair.</h4>
+            <h4>명품 사용에 대한 유연하고 합리적인 대안을 제시합니다.</h4>
+          
+        </div>
+          <hr>
+         <div id="upper">
+          <div class="explain">
+              <p>설명이 들어갑니다.</p>
+          </div>
+           <div id="BpriceTable">
+                <table style="width: 100%;" >
+                    <tr style="background-color: aquamarine;">
+                        <th id="sort" style="cursor: pointer; width: 20%;">브랜드명</th>
+                        <th style="width: 10%;">모델</th>
+                        <th style="width: 10%;">일일기준요금</th>
+                        <th style="width: 10%;">주중 특별가</th>
+                        <th style="width: 10%;">주말 특별가</th>            
+                        <th style="width: 10%;">연장시간당 대여요금</th>
+                    </tr>
+                </table>
+                <table id="BdataTable" style="width: 100%;"></table>
+           </div>
+          </div>
+         <div id="middle">     
+           <div class="explain">
+                <p>설명이 들어갑니다.</p>
+           </div>   
+           <div id="WpriceTable">
+                <table style="width: 100%;" >
+                    <tr style="background-color: aquamarine;">
+                        <th id="sort" style="cursor: pointer; width: 20%;">브랜드명</th>
+                        <th style="width: 10%;">모델</th>
+                        <th style="width: 10%;">일일기준요금</th>
+                        <th style="width: 10%;">주중 특별가</th>
+                        <th style="width: 10%;">주말 특별가</th>            
+                        <th style="width: 10%;">연장시간당 대여요금</th>
+                    </tr>
+                </table>
+                <table id="WdataTable" style="width: 100%;"></table>
+           </div>
+          </div>
+    </body>
+</html>
