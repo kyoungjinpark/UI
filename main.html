@@ -4,11 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="lib/jquery.min.js"></script>
-<script>
+<script src="site.js"></script>
+<script type="text/javascript">
         $(document).ready(function(){
             var menuList = ["welcome.html",
                             "service.html",
-                            "welcome.html",               
+                            "welcome.html",
                             "QnA.html",
                             "hotlist.html",
                             "welcome.html",
@@ -27,55 +28,28 @@
     </script>
 
 <link rel="stylesheet" type="text/css" href="PC.css">
+<link rel="stylesheet" type="text/css" href="header.css">
 <link rel="stylesheet" type="text/css" media="only screen and (max-width: 1000px)" href="TABLET.css">
 <link rel="stylesheet" type="text/css" media="only screen and (max-width: 500px)" href="MOBILE.css">
-<link rel="stylesheet" href="header.css">
 	<title> Title </title>
 </head>
 
 <body>
-   
     <!-- 상단 -->
     <section id="header">
-       <header>
-        
-        <div id="menu">        
-            <ul class="cf"> 
-             <li><a href="" style="background-image: url(welcome.jpg); width: 84.453px; height: 21px; background-size: cover; background-position: center; padding: 0"></a></li>
-              
-               <li class="a">서비스 안내</li>
-              
-               <li class="a">요금 안내</li>              
-              
-               <li class="a">고객센터</li>
-              
-               <li class="a">마이페이지</li>
-              
-               <li class="a">매물찾기/예약</li>
-               
-               <li class="a">
-               제휴 사이트
-                <ul class="submenu">
-                 <li><a href="https://www.rolex.com/" target="_blank">Rolex</a></li>
-                 <li><a href="https://www.blancpain.com/" target="_blank">Blanc Pain</a></li>
-                 <li><a href="https://www.patek.com/en/home" target="_blank">Patek Philippe</a></li>
-                 <li><a href="https://www.harrywinston.com/" target="_blank">Harry Winston</a></li>
-                 <li><a href="https://www.chanel.com/" target="_blank">Chanel</a></li>
-                 <li><a href="https://www.gucci.com/" target="_blank">Gucci</a></li>
-                 <li><a href="https://www.hermes.com/" target="_blank">Hermes</a></li>
-                 <li><a href="https://www.prada.com/" target="_blank">Prada</a></li>
-                </ul>
-              </li>
-              
+        <div id="menu">
+            <ul class="cf">
+                <li><a href="main.html">Vánity Fáir</a></li>
+                <li class="a">서비스 안내</li>
+                <li class="a">요금 안내</li>
+                <li class="a">고객센터</li>
+                <li class="a">마이페이지</li>
+                <li class="a">매물찾기/예약</li>
+                <li class="a" onclick="javascript:siteOpen();">제휴 사이트</li>
+                <li class="a"><a href="login.html" id="search" onclick="javascript:loginOpen();">Login</a></li>
             </ul>
         </div>
-        
-        <div>
-            
-        </div>
-        </header>
     </section>
-    
     <!-- 중앙 -->
     <section id="main">
         <div id="mainframe">
@@ -91,6 +65,5 @@
             
         </div>
     </footer>
-    
 </body>
 </html>

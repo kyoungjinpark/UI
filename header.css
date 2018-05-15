@@ -1,83 +1,67 @@
- #menu ul, li {
-            list-style: none;
-            margin: 0 auto;
-            padding: 0;
-        }
-        
-        .cf{
-            width: 900px;
-            z-index: 2;
-/*            width: fit-content;*/
-        }
-        
-        .cf > li {
-            background: black;
-            float: left;
-            position: relative;
-            display: block;
-            color: #fff;
-            text-transform: uppercase;
-            text-decoration: none;
-            font-family: Arial, Helvetica;
-            font-size: 1em;
-            padding: 0.9em 1em;
-        }
-        
-        .cf a {
-            display: block;
-            color: #fff;
-            text-transform: uppercase;
-            text-decoration: none;
-            font-family: Arial, Helvetica;
-            font-size: 1em;
-        }
-        
-        .cf li:hover {
-            background: #e74c3c;
-        }
-        
-        .cf > li > a {
-            padding: 2.3em 1em;
-        }
-        
-        .submenu{
-            position: absolute;
-            width: 200px;
-/*            left: 50%;*/
-            margin-left: -100px;
-            z-index: 2;
-        }
-        
-        .submenu li{
-            background-color: #34495e;
-            position: relative;
-            overflow: hidden;
-            transition: .2s ease transform;
-            z-index: 2;
-        }
-        
-        .submenu > li > a{
-            padding: 1em 2em;
-        }
-        
-        .submenu > li::after{
-            content: '';
-            position: absolute;
-            top: -125%;
-            height: 100%;
-            width: 100%;
-            box-shadow: 0 0 50px rgba(0, 0, 0, .9);
-            z-index: 2;
-        }	
-        
-        .submenu, .submenu il{
-            opacity: 0;
-            visibility: hidden;
-            z-index: 2;
-        }
-        
-        .cf > li:hover .submenu, .cf > li:hover .submenu li{
-            opacity: 1;
-            visibility: visible;
-            z-index: 2;
-        }
+/* 메뉴바 */
+    
+#menu ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0.5em 0;
+}
+
+#menu {
+
+}
+.cf {
+    width: 100%;
+    z-index: 2;
+}
+
+.cf a{
+    text-decoration: none;
+    text-align: center;
+    font-family: Arial, Helvetica;
+    color: #fff;
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    padding-top: 0.1em;
+    font-size: 20px;
+    width: 11%;
+}
+
+.cf li {
+    background: inline-block;
+    float: left;
+    position: relative;
+    display: block;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    font-family: Arial, Helvetica;
+    padding: 0.5em 0.5em;
+    width: 11%;
+    cursor: pointer;
+    font-size:17px;
+}
+
+.a:hover, #search:hover {
+    background: #e74c3c;
+    color: #fff042;
+    cursor: pointer;
+}
+
+/* 로그인 */
+#search {
+    color: #fff;
+    font-size: 17px;
+    font-family: sans-serif;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* 태블릿 */
+/*@media (max-width:1000px){.cf li{font-size:6px;}}*/
+
+
+/* 모바일 */
+/*@media (max-width:500px){.cf li{font-size:6px;}}*/
