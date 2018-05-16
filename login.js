@@ -18,5 +18,5 @@ function memberOpen(){
         }
 
 function returnOpen() {
-    location.href = "team.html";
+    location.href = "main.html";
 }
