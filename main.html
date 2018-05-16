@@ -9,12 +9,11 @@
         $(document).ready(function(){
             var menuList = ["welcome.html",
                             "service.html",
-                            "cost.html",
+                            "welcome.html",
                             "QnA.html",
                             "hotlist.html",
-                            "Reservation.html",
-			    "welcome.html",
-                            "login.html"];
+                            "welcome.html",
+                            "welcome.html"];
             if(localStorage.getItem("url") == null){
                 $("article").load("welcome.html");
             }else{
@@ -24,6 +23,15 @@
                 var index = $("#header li").index(this);
                 $("article").load(menuList[index]);
                 localStorage.setItem("url", menuList[index]);
+            });
+            
+            $("label").click(function(){
+               var sm = $(this) .next("#menu");
+                if(sm.is(":visible")){
+                    sm.slideUp();
+                }else{
+                    sm.slideDown();
+                }
             });
         });
     </script>
@@ -41,21 +49,16 @@
 <body>
     <!-- 상단 -->
     <section id="header">
-        <label for="toggle" onclick>Vánity Fáir</label>
-        <input type="checkbox" id="toggle"/>
-<!--
-        <label for="toggle" onclick>Menu</label>
-        <input type="checkbox" id="toggle">
--->
+        <label><a href="main.html">Vánity Fáir</a></label>
         <nav id="menu" class="menu">
             <ul class="cf">
-                <li><a href="main.html" class="a">Vánity<br>Fáir</a></li>
-                <li class="a">서비스 안내</li>
-                <li class="a">요금 안내</li>
-                <li class="a">고객센터</li>
-                <li class="a">마이페이지</li>
+                <li id="mp"><a href="main.html" class="a">Vánity<br>Fáir</a></li>
+                <li class="a" id="mp">서비스<br>안내</li>
+                <li class="a" id="mp">요금<br>안내</li>
+                <li class="a">고객<br>센터</li>
+                <li class="a">마이<br>페이지</li>
                 <li class="a">매물찾기<br>/예약</li>
-                <li class="a" onclick="javascript:siteOpen();">제휴 사이트</li>
+                <li class="a" id="mp" onclick="javascript:siteOpen();">제휴<br>사이트</li>
                 <a href="login.html" id="login" onclick="javascript:loginOpen();">Login</a>
             </ul>
         </nav>

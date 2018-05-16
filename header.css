@@ -6,7 +6,6 @@ label, #toggle{
 
 .menu{
   width: 100%;
-  height: auto;
   background: #2f3b3f;
   transition: all 0.3s ease;
 }
@@ -27,7 +26,6 @@ label, #toggle{
 
 .cf {
     width: 100%;
-    z-index: 2;
     padding:0;
     margin:0;
     display:inline;

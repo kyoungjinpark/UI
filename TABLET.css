@@ -4,14 +4,15 @@
     left:10%;
     background-color: red;
 }
+
+#menu{
+    transition: all 0.3s ease;
+}
+
 /* 중앙 */
 #main #mainframe{
     width: 80%;
     margin: 0 10%;
-}
-.c_photo img{
-    height: 170px;
-    width: 130px;
 }
 /* 하단 */
 footer #qna{
