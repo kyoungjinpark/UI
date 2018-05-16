@@ -19,8 +19,8 @@
             }else{
                 $("article").load(localStorage.getItem("url"));
             }
-            $("header li").click(function(){
-                var index = $("header li").index(this);
+            $("#header li").click(function(){
+                var index = $("#header li").index(this);
                 $("article").load(menuList[index]);
                 localStorage.setItem("url", menuList[index]);
             });
@@ -30,25 +30,34 @@
 <link rel="stylesheet" type="text/css" href="PC.css">
 <link rel="stylesheet" type="text/css" href="header.css">
 <link rel="stylesheet" type="text/css" media="only screen and (max-width: 1000px)" href="TABLET.css">
-<link rel="stylesheet" type="text/css" media="only screen and (max-width: 500px)" href="MOBILE.css">
+<link rel="stylesheet" type="text/css" media="only screen and (max-width: 710px)" href="MOBILE.css">
 	<title> Title </title>
+	<style>
+    </style>
+	
 </head>
 
 <body>
     <!-- 상단 -->
     <section id="header">
-        <div id="menu">
+        <label for="toggle" onclick>Vánity Fáir</label>
+        <input type="checkbox" id="toggle"/>
+<!--
+        <label for="toggle" onclick>Menu</label>
+        <input type="checkbox" id="toggle">
+-->
+        <nav id="menu" class="menu">
             <ul class="cf">
-                <li><a href="main.html">Vánity Fáir</a></li>
+                <li><a href="main.html" class="a">Vánity<br>Fáir</a></li>
                 <li class="a">서비스 안내</li>
                 <li class="a">요금 안내</li>
                 <li class="a">고객센터</li>
                 <li class="a">마이페이지</li>
-                <li class="a">매물찾기/예약</li>
+                <li class="a">매물찾기<br>/예약</li>
                 <li class="a" onclick="javascript:siteOpen();">제휴 사이트</li>
-                <li class="a"><a href="login.html" id="search" onclick="javascript:loginOpen();">Login</a></li>
+                <a href="login.html" id="login" onclick="javascript:loginOpen();">Login</a>
             </ul>
-        </div>
+        </nav>
     </section>
     <!-- 중앙 -->
     <section id="main">

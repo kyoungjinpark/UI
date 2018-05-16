@@ -1,17 +1,36 @@
 /* 메뉴바 */
-    
+label, #toggle{
+    display:none;
+    height: 10vh;
+}
+
+.menu{
+  width: 100%;
+  height: auto;
+  background: #2f3b3f;
+  transition: all 0.3s ease;
+}
+
+#menu ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  position: relative;
+  display: inline-block;
+}
+
 #menu ul, li {
     list-style: none;
     margin: 0;
-    padding: 0.5em 0;
+    padding-top: 0.2em;
 }
 
-#menu {
-
-}
 .cf {
     width: 100%;
     z-index: 2;
+    padding:0;
+    margin:0;
+    display:inline;
 }
 
 .cf a{
@@ -22,46 +41,40 @@
     position: relative;
     display: table-cell;
     vertical-align: middle;
-    padding-top: 0.1em;
-    font-size: 20px;
-    width: 11%;
+    font-size: 15px;
+    width: 8%;
 }
 
 .cf li {
     background: inline-block;
     float: left;
     position: relative;
-    display: block;
+    display: inline-block;
     color: #fff;
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;
     font-family: Arial, Helvetica;
-    padding: 0.5em 0.5em;
-    width: 11%;
+    width: 13%;
     cursor: pointer;
-    font-size:17px;
+    font-size:14px;
 }
 
 .a:hover, #search:hover {
-    background: #e74c3c;
     color: #fff042;
     cursor: pointer;
 }
 
 /* 로그인 */
-#search {
+#login {
     color: #fff;
-    font-size: 17px;
+    font-size: 14px;
+    font-weight: 700;
     font-family: sans-serif;
     text-align: center;
     text-decoration: none;
+    position: relative;
+    padding-top: 0.1em;
+    padding-right: 0.5em;
 }
-
-/* 태블릿 */
-/*@media (max-width:1000px){.cf li{font-size:6px;}}*/
-
-
-/* 모바일 */
-/*@media (max-width:500px){.cf li{font-size:6px;}}*/
