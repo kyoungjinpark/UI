@@ -12,8 +12,9 @@
                             "welcome.html",
                             "QnA.html",
                             "hotlist.html",
+                            "Reservation.html",
                             "welcome.html",
-                            "welcome.html"];
+			    "login.html"];
             if(localStorage.getItem("url") == null){
                 $("article").load("welcome.html");
             }else{
@@ -59,7 +60,7 @@
                 <li class="a">마이<br>페이지</li>
                 <li class="a">매물찾기<br>/예약</li>
                 <li class="a" id="mp" onclick="javascript:siteOpen();">제휴<br>사이트</li>
-                <a href="login.html" id="login" onclick="javascript:loginOpen();">Login</a>
+                <li class="a">Login</li>
             </ul>
         </nav>
     </section>
