@@ -9,6 +9,10 @@
     width: 94%;
     margin: 0 3%;
 }
+.c_photo img{
+    height: 130px;
+    width: 100px;
+}
 /* 하단 */
 footer #qna{
     width: 100%;
