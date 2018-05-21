@@ -5,8 +5,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="1.css">
-    <link rel="stylesheet" type="text/css" media="only screen and (max-width: 900px)" href="2.css">
-    <link rel="stylesheet" type="text/css" media="only screen and (max-width: 450px)" href="3.css">
+    <link rel="stylesheet" type="text/css" media="only screen and (max-width: 1000px)" href="2.css">
+    <link rel="stylesheet" type="text/css" media="only screen and (max-width: 710px)" href="3.css">
     <script src='http://gudi.kr/GDJ10/lib/jquery.min.js'></script>
 	<title> QnA </title>
 	<script>
@@ -31,9 +31,9 @@
         </div>
         <section id="qa_main">
             <ul id="qa_tap">
-                <li>공지사항</li>
-                <li>자주묻는<br>질문</li>
-                <li>고객의견</li>
+                <li class="qa_taplist">공지사항</li>
+                <li id="qa_taplist2" class="qa_taplist">자주묻는<br>질문</li>
+                <li class="qa_taplist">고객의견</li>
             </ul>
             <div id="qa_board">
                 <div id="qa_btitle">
@@ -215,20 +215,20 @@
                   </tr>
                 </table>
                 <ul id="qa_bno">
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                    <li>5</li>
-                    <li>6</li>
-                    <li>7</li>
-                    <li>8</li>
-                    <li>9</li>
-                    <li>10</li>
-                    <li>11</li>
-                    <li>></li>
+                    <li class="qa_bno_init">1</li>
+                    <li class="qa_bno_init">2</li>
+                    <li class="qa_bno_init">3</li>
+                    <li class="qa_bno_init">4</li>
+                    <li class="qa_bno_init">5</li>
+                    <li class="qa_bno_init">6</li>
+                    <li class="qa_bno_init">7</li>
+                    <li class="qa_bno_none">8</li>
+                    <li class="qa_bno_none">9</li>
+                    <li class="qa_bno_none">10</li>
+                    <li class="qa_bno_none">11</li>
+                    <li class="qa_bno_init">></li>
+                    <div id="qa_write">글쓰기</div>
                 </ul>
-                <div id="qa_write">글쓰기</div>
             </div>
         </section>
     </div>
