@@ -1,15 +1,34 @@
-html, body, h1, h2, h5, hr{
+html, body, h1, h2, h4, hr{
     margin: 0;     
 }
-#div1 {
-    height: 20vh; 
-    background-color: rgba(226, 118, 98, 0.1);
-    text-align: left;
-    font-family: arial;
-    padding-left: 10px;
+
+@font-face{font-family:'CaviarDreams'; src:url('CaviarDreams.ttf')}
+#html {
+    min-width: 544px;
+    font-family: "CaviarDreams";
+  
 }
-#div2 {
-    background-color: rgba(226, 118, 98, 0.1);
+#div1 {
+   
+    display: inline-block;
+    height: 230px;
+    width: calc(100% - 220px);
+    text-align: left;
+    font-family: CaviarDreams;
+    padding: 30px 0px;       
+}
+#left_top {    
+    display: inline-block; 
+    width: 215px;   
+    float: right;
+     
+}
+#left_top img {
+    height: 280px;
+    text-align: center;
+}
+
+#div2 { 
     display: inline-block;
     
 }
@@ -25,16 +44,13 @@ html, body, h1, h2, h5, hr{
 }
 
 .c_photo {
+    
     float: right;
     display: inline-block;
     padding: 0;       
 }    
+
+.c_photo img {
+    height: 250px;
 }
-#div2 {
-    background-color: rgba(226, 118, 98, 0.1);
-}
-#div3 {
-    clear: both;
-    height: 100vh; 
-    background-color: cornflowerblue;
-}
+
