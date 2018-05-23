@@ -6,29 +6,585 @@
 	<style>
         html, body, h1 {
             margin: 0;
+            padding: 0;
         }      
-        img {
-            width: 25vw; 
-            height:  25vw; 
-            border-radius: 50px;
-	    padding-top: 15px;	
-            display: block;
-            margin-left: auto;
-            margin-right: auto;            
+
+        #contentshead{
+            color:white;
+            display:inline-block;
+            position: relative;
+            top: 75%;
+/*            부모의 기준으로 50퍼센트*/
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+/*            자신을 기준으로 50퍼센트*/
         }
-        h1 {
+        
+        #contentshead h1 {
             text-align: center;
-        }        
+            font-family: Caviar_Dreams;
+            font-size: 5em;
+        }
+        
+        #contentshead p{
+            font-size: 2em;
+        }
+
+/*************************************************************************************/
+        
+        .bimg{
+            clear: both;
+            background-position: center;
+            background-size: auto;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+        #bi1{
+            background-image: url(new2.jpg);
+            width: 100%;
+            height: 400px;
+        }
+
+/*************************************************************************************/
+        
+        #bi2 {
+            height: 650px;
+            text-align: center;
+            margin: 5% 0;
+        }
+        
+        #bi2 h1{
+            font-size: 40px;
+        }
+        
+        #div1 {
+            display: inline-block;
+            position: relative;
+            width: 100%;
+        }
+        
+        #div1 p{
+            text-align: left;
+            margin-top: 3%;
+            width: 90%;
+            margin-left: 5%;
+        }
+        
+        .div2{
+            margin-top: 3%;
+            height: 400px;
+            position: relative;
+            overflow: hidden;
+            background-color: gainsboro;
+        }
+        
+        .div2 h1{
+            text-align: right;
+            padding: 0;
+            margin: 0;
+            font-size: 25px;
+        }
+        
+        .div2 p{
+            font-weight: bold;
+        }
+        
+        .div2 ul{
+            width: 200%;
+            height: 100%;
+            list-style: none;
+            padding: 0;
+            transition: 1s;
+        }
+        
+        input[type="radio"] {
+            display: none;
+        }
+        
+        label{
+            display: inline-block;
+            background:#868b8a;
+            color:white;
+            border:none;
+            position:relative;
+            height:40px;
+            font-size:1.6em;
+            padding:0 1em;
+            margin-top: 3%;
+            cursor:pointer;
+            transition:800ms ease all;
+            outline:none;
+            margin-left: calc(100% / 6);
+            margin-right: calc(100% / 6);
+        }
+        
+        label:hover{
+            background:white;
+            color:black;
+        }
+        
+        label:before,label:after{
+            content:'';
+            position:absolute;
+            top:0;
+            right:0;
+            height:2px;
+            width:0;
+            background: black;
+            transition:400ms ease all;
+        }
+        
+        label:after{
+            right:inherit;
+            top:inherit;
+            left:0;
+            bottom:0;
+        }
+        
+        label:hover:before,label:hover:after{
+            width:100%;
+            transition:800ms ease all;
+        }
+        
+    	#pos1:checked ~ ul {
+            margin-left: 0%;
+        }
+        
+	    #pos2:checked ~ ul {
+            margin-left: -100%;
+        }
+                
+        .div2 ul li {
+            float: left;
+            width: 10%;
+            height: 100%;
+        }
+        
+        .div2 ul li img{
+            width: 90%;
+            height: 200px;
+            border-radius: 5px;
+        }
+        
+        .div2 ul li img:hover{
+            transform: scale(1.5);
+            transition: 0.5s;
+            cursor: pointer;
+        }
+/*************************************************************************************/
+        
+        #bi3 {
+            height: 467px;
+            margin-top: 2%;
+        }
+        
+        #bi3 h1 {
+            font-size: 30px;
+        }
+        
+        #bi3 h2{
+            font-size: 15px;
+        }
+        
+        #div3 {
+            position: relative;
+        }
+        
+        #div3 ul {
+            list-style: none;
+            width: 100%;
+            position: relative;
+            padding-left: 0;
+            margin-top: 2vh;
+        }
+        
+        #div3 ul li{
+            float: left;
+            width: calc((100% - 168px) / 3);
+            text-align: center;
+            margin: 40px 28px;
+        }
+        
+        #div3 ul li h1, h2, p{
+            width: 100%;
+        }
+        
+        #div3 ul li img{
+            border-radius: 20px;
+            width: 200px;
+            height: 200px;
+        }
+/*************************************************************************************/
+        
+        #bi4 {
+            width: 100%;
+            height: 320px;
+            background-color: black;
+            color: white;
+            margin: 3% 0;
+        }
+        
+        #div4{
+            position: absolute;
+            width: 50%;
+            height: 100%;
+            display: inline-block;
+        }
+        
+        #div4 h1 {
+            font-size: 30px;
+            margin-top: 70px;
+            margin-left: 10px;
+        }
+        
+        #div4 p {
+            margin-left: 10px;
+        }
+        
+        #div5{
+            position: absolute;
+            left: 50%;
+            display: inline-block;
+            width: 50%;
+            height: 100%;
+        }
+        
+        #div5 h1 {
+            margin-top: 30px;
+            font-size: 25px;
+        }
+        
+        .bp {
+            margin-top: 3px;
+            width: 90%;
+            margin-left: 5%;
+            height: 30px;
+            background-color: gray;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        #watch_p {
+            width: 80%;
+            height: 100%;
+            background-color: yellow;
+        }
+        
+        #bag_p {
+            width: 74%;
+            height: 100%;
+            background-color: yellow;
+        }
+        
+        #store_p {
+            width: 92%;
+            height: 100%;
+            background-color: yellow;
+        }
+/*************************************************************************************/
+        #bi5{
+            left: 5%;
+            width: 90%;
+            height: 500px;
+            background-color: black;
+            color: white;
+            margin-top: 7%;
+        }
+        
+        #mh {
+            font-size: 40px;
+            text-align: center;
+            padding-top: 15px;
+        }
+        
+        .you{
+            width: 50%;
+            float: left;
+            text-align: center;
+            background-color: black;
+        }
+        
+        .you iframe {
+            margin-top: 5%;
+            margin-left: 5%;
+            margin-right: 5%;
+            width: 80%;
+            height: 300px;
+        }
+        
+        .you h1 {
+            margin: 0;
+            padding: 0;
+            font-size: 25px;
+            text-align: left;
+            margin-left: 5%;
+        }
+        
+        .you p{
+            text-align: left;
+            margin-left: 10%;
+        }
+/*************************************************************************************/
+        #bi6{
+            width: 100%;
+            height: 800px;
+        }
+        
+        #mh6{
+            font-size: 40px;
+            text-align: center;
+            padding-top: 40px;
+        }
+        
+        #mp6{
+            text-align: center;
+        }
+        
+        .mmm{
+            float: left;
+            width: calc(94% / 3);
+            height: 585px;
+            margin: 25px 1%;
+            text-align: center;
+            display: inline-block;
+            line-height: 43px;
+            background-color: gainsboro;
+        }
+        
+        .mm_d{
+            border-bottom: 1px solid white;
+            height: 55px;
+            margin: calc((485px / 9) / 6) 0;
+        }
+        
+        .mmm_d{
+            border-bottom: 1px solid white;
+            margin: calc((485px / 9) / 6) 0;
+            height: 48.5px;
+        }
+        
+        #center_m{
+            height: 630px;
+            margin-top: 0;
+        }
+        
+        #lm, #rm, #cm {
+            font-size: 40px;
+            height: 150px;
+            line-height: 150px;
+            background-color: black;
+            margin: 0;
+            color: white;
+        }
+        
+        #cm {
+            font-size: 50px;
+            background-color: #f43d3d;
+        }
+        
+        
+        .endm{
+            margin-top: 19px;
+            margin-left: calc(100% / 3);
+            margin-right: calc(100% / 3);
+            background-color: black;
+            color: white;
+            
+        }
+        
+        #endm2{
+            margin-top: 23px;
+            margin-left: calc(100% / 3);
+            margin-right: calc(100% / 3);
+            background-color: black;
+            color: white;
+        }
+        
+        .endm:hover, #endm2:hover{
+            background-color: gray;
+            color: black;
+            cursor: pointer;
+        }
+        
+/*************************************************************************************/
+        @font-face{
+            font-family: "Caviar_Dreams";
+            src: url(Caviar-Dreams/CaviarDreams.ttf) format('truetype');
+        }
     </style>
-    <script>
-        </script>
 </head>
 <body>
-   <section>
-      <div>
-        <img src="welcome.jpg">
-      </div>    
-    </section>
-    <h1> WELCOME </h1>
+            <section id="bi1" class="bimg">
+                <article id="contentshead">
+                    <h1>Vánity Fáir</h1>
+                        <p>Superior reliability, optimal satisfaction, and best quality</p>
+                </article>
+            </section>
+        
+            <section id="bi2" class="bimg">
+                <article>
+                   <div id="div1">
+                    <h1>The Shareing System</h1>
+                    <p>We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <div class="div2">
+                        <input type="radio" name="pos" id="pos1" checked>
+                        <input type="radio" name="pos" id="pos2">
+                        <label for="pos1">Watch</label>
+                        <label for="pos2">Bag</label>
+                        
+                        <ul>
+                            <li>
+                                <p>BLANCPAIN</p>
+                                <img src="img/BLANCPAIN%20-%20FIFTY%20FATHOMS%20FLYBACK%20CHRONOGRAPH.jpg">
+                            </li>
+                            <li>
+                                <p>HARRYWINSTON</p>
+                                <img src="img/HARRY%20WINSTON%20-%20200-MMTZ39PL-KC.jpg">
+                            </li>
+                            <li>
+                                <p>PATEKPHILIPPE</p>
+                                <img src="img/PATEK%20PHILIPPE%20-%20MOON%20PHASE%20AUTOMATIC%20DUAL%20TIME.jpg">
+                            </li>
+                            <li>
+                                <p>ROLEX</p>
+                                <img src="img/Rolex%20Oyster%20Perpetual%20-%20Yacht%20Master%20RG%20soldier%201000.jpg">
+                            </li>
+                            <li>
+                                <p>BREGUET</p>
+                                <img src="img/Breguet.jpg">
+                            </li>
+                            <li>
+                                <p>CHANEL</p>
+                                <img src="img/chanelbag.jpg">
+                            </li>
+                            <li>
+                                <p>GUCCI</p>
+                                <img src="img/guccibag.JPG">
+                            </li>
+                            <li>
+                                <p>HERMES</p>
+                                <img src="img/hermesbag.jpg">
+                            </li>
+                            
+                            <li>
+                                <p>LOUIS</p>
+                                <img src="img/Louis.jpg">
+                            </li>
+                            <li>
+                                <p>PRADA</p>
+                                <img src="img/pradabag.jpg">
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
+
+            <section id="bi5" class="bimg">
+                <article>
+                   <h1 id="mh">Making Film</h1>
+                    <div class="you"><iframe src="https://www.youtube.com/embed/SGPjFFMD3c0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <h1>Patek Philippe</h1>
+                        <p>It designs and manufactures timepieces and movements.</p>
+                    </div>
+                    <div class="you"><iframe src="https://www.youtube.com/embed/jIpBsbzuiHA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <h1>Gucci</h1>
+                        <p>Gucci is also the highest-selling Italian brand.</p>
+                    </div>
+                </article>
+            </section>
+           
+            <section id="bi3" class="bimg">
+                <article>
+                    <div id="div3">
+                        <ul>
+                            <li>
+                                <img src="LCH.png"
+                                 onmouseover="this.src='CEO.jpg'" onmouseout="this.src='LCH.png'">
+                                <h1>LeeChongHwa</h1>
+                                <h2>CEO & Founder</h2>
+                                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                            </li>
+                            <li>
+                                <img src="PKJ.png"
+                                 onmouseover="this.src='Designer.jpg'" onmouseout="this.src='PKJ.png'">
+                                <h1>ParkKyoungJin</h1>
+                                <h2>Designer</h2>
+                                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                            </li>
+                            <li>
+                                <img src="SIS.png"
+                                 onmouseover="this.src='Architect.jpg'" onmouseout="this.src='SIS.png'">
+                                <h1>SoInSeong</h1>
+                                <h2>Architect</h2>
+                                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
+
+            <section id="bi4" class="bimg">
+                <article>
+                    <div id="div4">
+                        <h1>Our Items.</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                    </div>
+                    <div id="div5">
+                        <h1><img src="watch.svg" style="background-color: white;">&nbsp;&nbsp;Watch</h1>
+                            <div class="bp">
+                                <div id="watch_p">80%</div>
+                            </div>
+                        <h1><img src="bag.svg" style="background-color: white;">&nbsp;&nbsp;Bag</h1>
+                            <div class="bp">
+                                <div id="bag_p">&nbsp;74%</div>
+                            </div>
+                        <h1><img src="store.svg" style="background-color: white;">&nbsp;&nbsp;Store</h1>
+                            <div class="bp">
+                                <div id="store_p">&nbsp;92%</div>
+                            </div>
+                    </div>
+                </article>
+            </section>
+            
+            <section id="bi6" class="bimg">
+                <article>
+                    <h1 id="mh6">Membership</h1>
+                    <p id="mp6">Choose a Memberships that fits your needs.</p>
+                    <div class="mmm">
+                        <div class="mmm_d" id="lm">Basic</div>
+                        <div class="mmm_d"><strong>3Days</strong> Free</div>
+                        <div class="mmm_d"><strong>1Month</strong> Insurance</div>
+                        <div class="mmm_d">None Notification</div>
+                        <div class="mmm_d"><strong>All Day</strong> SNS Servise</div>
+                        <div class="mmm_d"><strong>Endless</strong> Support</div>
+                        <div class="mmm_d"><strong>$30</strong> per month</div>
+                        <div class="se"><div class="endm">Sign Up</div></div>
+                    </div>
+                    <div id="center_m" class="mmm">
+                        <div class="mm_d" id="cm">Pro</div>
+                        <div class="mm_d"><strong>5Days</strong> Free</div>
+                        <div class="mm_d"><strong>2Month</strong> Insurance</div>
+                        <div class="mm_d"><strong>New Product</strong> Notification</div>
+                        <div class="mm_d"><strong>All Day</strong> SNS Servise</div>
+                        <div class="mm_d"><strong>Endless</strong> Support</div>
+                        <div class="mm_d"><strong>$50</strong> per month</div>
+                        <div class="se"><div id="endm2">Sign Up</div></div>
+                    </div>
+                    <div class="mmm">
+                         <div class="mmm_d" id="rm">Premium</div>
+                         <div class="mmm_d"><strong>7Days</strong> Free</div>
+                         <div class="mmm_d"><strong>3Month</strong> Insurance</div>
+                         <div class="mmm_d"><strong>New Product</strong> Notification</div>
+                         <div class="mmm_d"><strong>All Day</strong> SNS Servise</div>
+                         <div class="mmm_d"><strong>Endless</strong> Support</div>
+                         <div class="mmm_d"><strong>$70</strong> per month</div>
+                         <div class="se"><div class="endm">Sign Up</div></div>
+                    </div>
+                </article>
+            </section>
 </body>
 </html>

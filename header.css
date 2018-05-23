@@ -1,5 +1,8 @@
 /* 메뉴바 */
-label, #toggle{
+#aa{
+    text-align: center;
+    text-decoration: none;
+    color: white;
     display:none;
     height: 10vh;
 }
