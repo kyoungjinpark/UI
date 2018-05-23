@@ -1,6 +1,7 @@
 html, body, h1, h2, h4, hr{
     margin: 0;     
 }
+h2 {color: #a84848;}
 
 @font-face{font-family:'CaviarDreams'; src:url('CaviarDreams.ttf')}
 #html {
