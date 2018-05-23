@@ -6,9 +6,12 @@ h2 {
 }
 @font-face{font-family:'CaviarDreams'; src:url('CaviarDreams.ttf')}
 
-body {
+#body {
     font-family: "CaviarDreams";
     min-width: 915px;    
+}
+div {
+    
 }
 #div1 {
     display: inline-block;
