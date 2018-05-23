@@ -8,29 +8,29 @@ h2 {
 
 #body {
     font-family: "CaviarDreams";
-    min-width: 915px;    
+    min-width: 744px;    
 }
 div {
     
 }
 #div1 {
     display: inline-block;
-    height: 230px;
-    width: calc(100% - 420px);
+    height: 210px;
+    width: calc(100% - 25vw);
     text-align: left;
     font-family: CaviarDreams;
-    padding: 30px 0px;       
+    padding: 25px 0px;   
+    float: left;
 }
 #div2 {
     display: inline-block; 
-    width: 420px;
-    font-family: CaviarDreams;
-    float: right;
-     
+    width: 25vw;
+    font-family: CaviarDreams;     
 }
 #div2 img {
     height: 280px;
     text-align: center;
+    float: right;
 }
 #upper {    
     width: 100%;
