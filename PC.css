@@ -11,7 +11,7 @@ html, body {
 #header{
     position: fixed;
     width: 100%;
-    height: 10vh;
+    height: 95px;
     left: 0;
     top: 0;
     transition: top .5s ease-out;
@@ -21,7 +21,7 @@ html, body {
 #menu{
     position: relative;
     width: 60%;
-    height: 10vh;
+    height: 100%;
     left: 20%;
     background-color: black;
 }
@@ -31,9 +31,9 @@ html, body {
     position: absolute;
     overflow-x: hidden;
     width: 100%;
-    height: 80vh;
-    bottom: 10vh;
-    top: 10vh;
+    height: calc(100% - 183px);
+    bottom: 90px;
+    top: 95px;
 }
 
 #main #mainframe{
@@ -44,15 +44,15 @@ html, body {
 
 /* 하단 */
 footer{
-    height: 10vh;
+    height: 90px;
     width: 100%;
     position: absolute;
-    top: 90vh;
+    bottom: 0;
 }
 
 footer #qna{
     margin: 0 20%;
-    height: 10vh;
+    height: 100%;
     background-color: darkred;
 }
 
