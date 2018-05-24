@@ -4,20 +4,32 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="1.css">
-    <link rel="stylesheet" type="text/css" media="only screen and (max-width: 1200px)" href="2.css">
-    <link rel="stylesheet" type="text/css" media="only screen and (max-width: 600px)" href="3.css">
+    <link rel="stylesheet" type="text/css" href="jh1.css">
+    <link rel="stylesheet" type="text/css" media="only screen and (max-width: 1200px)" href="jh2.css">
+    <link rel="stylesheet" type="text/css" media="only screen and (max-width: 600px)" href="jh3.css">
     <script src='http://gudi.kr/GDJ10/lib/jquery.min.js'></script>
 	<title> QnA </title>
 	<script>
         $(document).ready(function(){
-            $("#qa_tap li").on("click", function(){
+            $("#qa_tap li").off().on("click", function(){
                 var i = $(this).index() + 1;
                 var title = ["<h3>공지사항</h3>", "<h3>자주묻는 질문</h3>", "<h3>고객 의견</h3>"];
                 $("#qa_board table").hide();
                 $("#qa_table" + i).show();
                 $("#qa_btitle").empty();
                 $("#qa_btitle").html(title[i - 1]);
+                if (i == 1) {
+                    $("#qa_bno").css("display", "inline-block");
+                    $("#qa_write").css("display", "none");
+                    $("#qa_ta2tap").css("display", "none");
+                } else if (i == 2) {
+                    $("#qa_bno").css("display", "none");
+                    $("#qa_ta2tap").css("display", "inline-block")
+                } else if (i == 3) {
+                    $("#qa_bno").css("display", "inline-block");
+                    $("#qa_write").css("display", "block");
+                    $("#qa_ta2tap").css("display", "none");
+                }
             });
         });
     </script>
@@ -43,6 +55,13 @@
                     <input type="text" name="bsinput" id="qa_bsinput">
                     <input type="submit" id="qa_bsbutton" value="검색">
                 </form>
+                <ul id="qa_ta2tap">
+                    <li>가입문의</li>
+                    <li>예약문의</li>
+                    <li>결제문의</li>
+                    <li>쿠폰사용</li>
+                    <li>탈퇴문의</li>
+                </ul>
                 <table id="qa_table1">
                   <tr>
                     <th>번호</th>
@@ -51,12 +70,12 @@
                   </tr>
                   <tr>
                     <td>10</td>
-                    <td class="qa_btext"><a href="#">[공지] HTML/CSS 변경사항 안내</a></td>
-                    <td>2018-05-14</td>
+                    <td class="qa_btext"><a href="#">(new)[공지] HTML/CSS 변경사항 안내</a></td>
+                    <td>2018-05-28</td>
                   </tr>
                   <tr>
                     <td>9</td>
-                    <td class="qa_btext"><a href="#">[이벤트] Java배우고 할인기회 자바보자!(4/15~5/15)</a></td>
+                    <td class="qa_btext"><a href="#">[이벤트] Java배우고 할인기회 자바보자!(4/15~5/31)</a></td>
                     <td>2018-04-15</td>
                   </tr>
                   <tr>
@@ -102,116 +121,112 @@
                 </table>
                 <table id="qa_table2">
                   <tr>
-                    <th>번호</th>
-                    <th>제목</th> 
-                    <th>작성일자</th>
+                    <td><b>Q</b></td>
+                    <td class="qa_btext"><a href="#">중국제, 짝퉁상품도 등록이 가능한가요?</a></td>
                   </tr>
                   <tr>
-                    <td>10</td>
-                    <td class="qa_btext"><a href="#">[공지] HTML/CSS 변경사항 안내</a></td>
-                    <td>2018-05-14</td>
+                    <td><b>Q</b></td>
+                    <td class="qa_btext"><a href="#">제가 예약한 동안 타인이 사용/착용해도 되나요?</a></td>
                   </tr>
                   <tr>
-                    <td>9</td>
-                    <td class="qa_btext"><a href="#">[이벤트] Java배우고 할인기회 자바보자!(4/15~5/15)</a></td>
-                    <td>2018-04-15</td>
+                    <td><b>Q</b></td>
+                    <td class="qa_btext"><a href="#">보험 기준이 어떻게 되나요?</a></td>
                   </tr>
                   <tr>
-                    <td>8</td>
-                    <td class="qa_btext"><a href="#">[공지] 대여 방식 변경 안내(11/11~)</a></td>
-                    <td>2017-10-10</td>
+                    <td><b>Q</b></td>
+                    <td class="qa_btext"><a href="#">체크카드도 사용이 가능한가요?</a></td>
                   </tr>
                   <tr>
-                    <td>7</td>
-                    <td class="qa_btext"><a href="#">[이벤트] #신상할인이벤트! 지금당장 확인(종료)</a></td>
-                    <td>2017-06-22</td>
+                    <td><b>Q</b></td>
+                    <td class="qa_btext"><a href="#">외국인도 이용이 가능한가요?</a></td>
                   </tr>
                   <tr>
-                    <td>6</td>
-                    <td class="qa_btext"><a href="#">[이벤트] 화이트데이는 가방과 함께!(종료)</a></td>
-                    <td>2017-03-14</td>
+                    <td><b>Q</b></td>
+                    <td class="qa_btext"><a href="#">이곳을 이용하면 토익점수가 오르나요?</a></td>
                   </tr>
                   <tr>
-                    <td>5</td>
-                    <td class="qa_btext"><a href="#">[공지] 신년 공휴일 서비스 안내</a></td>
-                    <td>2017-01-03</td>
+                    <td><b>Q</b></td>
+                    <td class="qa_btext"><a href="#">휴대전화 본인인증이 되지 않습니다.</a></td>
                   </tr>
                   <tr>
-                    <td>4</td>
-                    <td class="qa_btext"><a href="#">[이벤트] 겨울맞이 생일선물 이벤트(종료)</a></td>
-                    <td>2016-12-17</td>
+                    <td><b>Q</b></td>
+                    <td class="qa_btext"><a href="#">본인명의의 핸드폰으로만 가입할 수 있나요?</a></td>
                   </tr>
                   <tr>
-                    <td>3</td>
-                    <td class="qa_btext"><a href="#">[이벤트] 시계차면 포인트도 차요!(종료)</a></td>
-                    <td>2016-08-02</td>
+                    <td><b>Q</b></td>
+                    <td class="qa_btext"><a href="#">상품 파손/손해시에 어떻게 해야 하나요??</a></td>
                   </tr>
                   <tr>
-                    <td>2</td>
-                    <td class="qa_btext"><a href="#">[공지] 개인정보 처리방침 변경 안내(5/1~)</a></td>
-                    <td>2016-04-17</td>
-                  </tr>
-                  <tr>
-                    <td>1</td>
-                    <td class="qa_btext"><a href="#">[공지] 필독바람! 개인정보 열람에 관한 안내</a></td>
-                    <td>2016-03-14</td>
+                    <td><b>Q</b></td>
+                    <td class="qa_btext"><a href="#">배고파요.</a></td>
                   </tr>
                 </table>
                 <table id="qa_table3">
                   <tr>
                     <th>번호</th>
                     <th>제목</th> 
+                    <th>답변유무</th>
                     <th>작성일자</th>
                   </tr>
                   <tr>
                     <td>10</td>
-                    <td class="qa_btext"><a href="#">[공지] HTML/CSS 변경사항 안내</a></td>
-                    <td>2018-05-14</td>
+                    <td class="qa_btext"><a href="#">발표에 어울릴 손목시계 추천해주십시오.</a></td>
+                    <td>확인중</td>
+                    <td>2018-05-28</td>
                   </tr>
                   <tr>
                     <td>9</td>
-                    <td class="qa_btext"><a href="#">[이벤트] Java배우고 할인기회 자바보자!(4/15~5/15)</a></td>
-                    <td>2018-04-15</td>
+                    <td class="qa_btext"><a href="#">특정 행사에 맞춘 상품목록도 만들어주세요.</a></td>
+                    <td>완료!</td>
+                    <td>2018-02-15</td>
                   </tr>
                   <tr>
                     <td>8</td>
-                    <td class="qa_btext"><a href="#">[공지] 대여 방식 변경 안내(11/11~)</a></td>
-                    <td>2017-10-10</td>
+                    <td class="qa_btext"><a href="#">다시는 안쓸지도</a></td>
+                    <td>완료!</td>
+                    <td>2017-11-05</td>
                   </tr>
                   <tr>
                     <td>7</td>
-                    <td class="qa_btext"><a href="#">[이벤트] #신상할인이벤트! 지금당장 확인(종료)</a></td>
-                    <td>2017-06-22</td>
+                    <td class="qa_btext"><a href="#">상품이 땀으로 다 젖어서 돌아왔네요;;</a></td>
+                    <td>완료!</td>
+                    <td>2017-07-15</td>
                   </tr>
                   <tr>
                     <td>6</td>
-                    <td class="qa_btext"><a href="#">[이벤트] 화이트데이는 가방과 함께!(종료)</a></td>
-                    <td>2017-03-14</td>
+                    <td class="qa_btext"><a href="#">발렌타인데이 이벤트도 좀 해주세요.</a></td>
+                    <td>완료!</td>
+                    <td>2017-02-14</td>
                   </tr>
                   <tr>
                     <td>5</td>
-                    <td class="qa_btext"><a href="#">[공지] 신년 공휴일 서비스 안내</a></td>
-                    <td>2017-01-03</td>
+                    <td class="qa_btext"><a href="#">짝퉁확인좀 확실히 해주세요</a></td>
+                    <td>완료!</td>
+                    <td>2017-01-29</td>
                   </tr>
                   <tr>
                     <td>4</td>
-                    <td class="qa_btext"><a href="#">[이벤트] 겨울맞이 생일선물 이벤트(종료)</a></td>
-                    <td>2016-12-17</td>
+                    <td class="qa_btext"><a href="#">산타할아버지가 안오시네요.</a></td>
+                    <td>완료!</td>
+                    <td>2016-12-25</td>
                   </tr>
                   <tr>
                     <td>3</td>
-                    <td class="qa_btext"><a href="#">[이벤트] 시계차면 포인트도 차요!(종료)</a></td>
-                    <td>2016-08-02</td>
+                    <td class="qa_btext"><a href="#">반품 좀 일찍일찍 할 수 있게..</a></td>
+                    <td>완료!</td>
+                    <td>2016-06-02</td>
                   </tr>
                   <tr>
                     <td>2</td>
-                    <td class="qa_btext"><a href="#">[공지] 개인정보 처리방침 변경 안내(5/1~)</a></td>
-                    <td>2016-04-17</td>
+                    <td class="qa_btext"><a href="#">제주도 쪽에도 서비스를 더 활발히 해주세요.</a></td>
+                    <td>완료!</td>
+                    <td>2016-05-21</td>
                   </tr>
                   <tr>
                     <td>1</td>
-                    <td class="qa_btext"><a href="#">[공지] 필독바람! 개인정보 열람에 관한 안내</a></td>
-                    <td>2016-03-14</td>
+                    <td class="qa_btext"><a href="#">쿠폰사용은 어떻게하나요??</a></td>
+                    <td>완료!</td>
+                    <td>2016-03-22</td>
                   </tr>
                 </table>
                 <ul id="qa_bno">
