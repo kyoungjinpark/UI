@@ -372,6 +372,9 @@ html, body {
     border-collapse: collapse;
     background-color: white;
 }
+#rsv_list_table2 {
+    display: none;
+}
 #rsv_list table th {
     margin: 0;
     padding: 0;
@@ -398,19 +401,34 @@ html, body {
     display: inline-block;
 }
 #rsv_list_img1 {
-    background-image: url(img/img1.jpg);
+    background-image: url(img/bag01.jpg);
 }
 #rsv_list_img2 {
-    background-image: url(img/img2.jpg);
+    background-image: url(img/bag02.jpg);
 }
 #rsv_list_img3 {
-    background-image: url(img/img3.jpg);
+    background-image: url(img/bag03.jpg);
 }
 #rsv_list_img4 {
-    background-image: url(img/img4.jpg);
+    background-image: url(img/bag04.jpg);
 }
 #rsv_list_img5 {
-    background-image: url(img/img5.jpg);
+    background-image: url(img/bag05.jpg);
+}
+#rsv_list_img6 {
+    background-image: url(img/clock01.jpg);
+}
+#rsv_list_img7 {
+    background-image: url(img/clock02.jpg);
+}
+#rsv_list_img8 {
+    background-image: url(img/clock03.jpg);
+}
+#rsv_list_img9 {
+    background-image: url(img/clock04.jpg);
+}
+#rsv_list_img10 {
+    background-image: url(img/clock05.jpg);
 }
 .rsv_list_img:hover {
     cursor: pointer;
