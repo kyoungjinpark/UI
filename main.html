@@ -25,6 +25,10 @@
                 $("article").load(menuList[index]);
                 localStorage.setItem("url", menuList[index]);
             });
+		
+            $("#aa").click(function(){
+                $("article").load("welcome.html");
+            });
 
         });
     </script>
@@ -41,7 +45,7 @@
 <body>
     <!-- 상단 -->
     <section id="header">
-        <a href="main.html" id="aa">Vánity Fáir</a>
+        <a id="aa">Vánity Fáir</a>
         <nav id="menu" class="menu">
             <ul class="cf">
                 <li id="mp"><a href="main.html" class="a">Vánity<br>Fáir</a></li>
