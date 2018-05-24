@@ -7,10 +7,23 @@ h2 {color: #a84848;}
 #html {
     min-width: 544px;
     font-family: "CaviarDreams";
-  
+    animation-name: process;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
 }
-#div1 {
-   
+@-webkit-keyframes process {
+  0% {        
+  }
+  35% { 
+    background: rgba(174, 0, 0, 0.4);
+  }    
+  50% {    
+    background: rgba(92, 11, 11, 0.4); 
+  }
+  100% {       
+  }    
+}  
+#div1 {   
     display: inline-block;
     height: 230px;
     width: calc(100% - 220px);
@@ -21,17 +34,14 @@ h2 {color: #a84848;}
 #left_top {    
     display: inline-block; 
     width: 215px;   
-    float: right;
-     
+    float: right;     
 }
 #left_top img {
     height: 280px;
     text-align: center;
 }
-
 #div2 { 
-    display: inline-block;
-    
+    display: inline-block;    
 }
 .article{
     width: 95%;     
@@ -43,9 +53,7 @@ h2 {color: #a84848;}
     width: 60%;
     display: inline-block;
 }
-
-.c_photo {
-    
+.c_photo {    
     float: right;
     display: inline-block;
     padding: 0;       
@@ -54,4 +62,3 @@ h2 {color: #a84848;}
 .c_photo img {
     height: 250px;
 }
-
