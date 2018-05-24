@@ -112,6 +112,7 @@
     text-align: center;
 }
 .rsv_menu {
+    width: calc(100% - 20px);
     background-color: #fffcfc;
     padding: 10px;
 }
@@ -157,7 +158,7 @@
 #rsv_list table {
     margin: 0;
     padding: 0;
-    width: calc(100% + 1px);
+    width: 100%;
     height: 600px;
 }
 #rsv_list table th {
