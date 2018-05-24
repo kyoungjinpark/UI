@@ -4,9 +4,7 @@
 <meta charset="UTF-8">
 <link rel="stylesheet" href="cost.css">
 <script src="lib/jquery.min.js"></script>
-	<style>
-        ul {padding-left: 0; list-style: none;}
-    </style>
+	
     <script>
         $(document).ready(function(){
            var list = [
@@ -17,8 +15,6 @@
                {key:"Lousi vutton", model:"pouch", daycost: "72,000원", weekdays: "28,600원~", weekend: "33,000원~", over:"3,240원~"}
            ];
            list.forEach(function(row){
-               //$("ul").append("<li>" + row.key + ") " + row.title + "</li>");
-               
                var html = "";
                 html += '<tr>';
                 html += ' <td style="text-align: center; width: 20%;">'+row.key+'</td>';
@@ -29,29 +25,7 @@
                 html += ' <td style="width: 10%;">'+row.over+'</td>';
                html += '</tr>';
                $("#BdataTable").append(html);
-           });
-            var flag = true;
-            $("#sort").on("click", function(){
-               $("#BdataTable").empty();
-               list.forEach(function(row){               
-                var html = "";
-                html += '<tr>';
-                html += ' <td style="text-align: center; width: 20%;">'+row.key+'</td>';
-                html += ' <td style="width: 10%;">'+row.model+'</td>';
-                html += ' <td style="width: 10%;">'+row.daycost+'</td>';
-                html += ' <td style="width: 10%;">'+row.weekdays+'</td>';
-                html += ' <td style="width: 10%;">'+row.weekend+'</td>';
-                html += ' <td style="width: 10%;">'+row.over+'</td>';
-                html += '</tr>';
-                if(flag){
-                    $("#BdataTable").prepend(html);
-                }else {
-                    $("#BdataTable").append(html);
-                }
-                
-              });
-                flag = !flag;
-            });
+           });          
         });
         
         $(document).ready(function(){
@@ -63,8 +37,6 @@
                {key:"Blancpain", model:"fathoms", daycost: "72,000원", weekdays: "21,600원~", weekend: "28,000원~", over:"2,840원~"}
            ];
            Wlist.forEach(function(row){
-               //$("ul").append("<li>" + row.key + ") " + row.title + "</li>");
-               
                var html = "";
                html += '<tr>';
                html += ' <td style="text-align: center; width: 20%;">'+row.key+'</td>';
@@ -75,39 +47,18 @@
                 html += ' <td style="width: 10%;">'+row.over+'</td>';
                html += '</tr>';
                $("#WdataTable").append(html);
-           });
-            var flag = true;
-            $("#sort").on("click", function(){
-               $("#WdataTable").empty();
-               list.forEach(function(row){               
-                var html = "";
-                 html += '<tr>';
-               html += ' <td style="text-align: center; width: 20%;">'+row.key+'</td>';
-               html += ' <td style="width: 10%;">'+row.model+'</td>';
-                html += ' <td style="width: 10%;">'+row.daycost+'</td>';
-                html += ' <td style="width: 10%;">'+row.weekdays+'</td>';
-                html += ' <td style="width: 10%;">'+row.weekend+'</td>';
-                html += ' <td style="width: 10%;">'+row.over+'</td>';
-               html += '</tr>';
-                if(flag){
-                    $("#WdataTable").prepend(html);
-                }else {
-                    $("#WdataTable").append(html);
-                }
-                
-              });
-                flag = !flag;
-            });
+           });           
         });
     </script>
 </head>
 
     <body>
        <div id="body">
+        <section>
         <div id="div1">
             <h2>Vánity Fáir가 합리적인 이유!</h2>
             <h1>더 경제적이고 더 합리적인</h1>
-            <h1>Vánity Fáir의 이용요금</h1>
+            <h1><span>Vánity Fáir</span>의 이용요금</h1>
             <h3>1시간 단위 예약이 가능한 Vánity Fáir.</h3>
             <h3>명품 사용에 대한 <br>
             유연하고 합리적인 대안을 제시합니다.</h3>          
@@ -115,9 +66,10 @@
         <div id="div2">
             <img src="watch/patek-philippe%20store.jpg">
         </div> 
+         </section>
           <hr>
          <div id="upper">
-          <div class="explain" style="font-style: ">
+          <div class="explain">
              <h2>대여 요금 안내</h2>
               <p>최소 30분부터 10분 단위로 예약이 가능합니다.<br><br>
                  대여요금 및 추가요금은 당사 내부정책에 따라 변경될 수 있습니다.<br><br>
@@ -132,7 +84,7 @@
                <h2>가방 대여 요금표</h2>          
                 <table style="width: 100%;" >                   
                     <tr>
-                        <th id="sort" style="cursor: pointer; width: 20%;">브랜드명</th>
+                        <th style="width: 20%;">브랜드명</th>
                         <th style="width: 10%;">모델</th>
                         <th style="width: 10%;">일일기준요금</th>
                         <th style="width: 10%;">주중 특별가</th>
@@ -143,14 +95,12 @@
                 <table id="BdataTable" style="width: 100%;"></table>
            </div>
           </div>
-         <div id="middle">     
-           <div class="explain">               
-           </div>   
+         <div id="middle">  
            <div id="WpriceTable">
                <h2>시계 대여 요금표</h2>
                 <table style="width: 100%;" >
                     <tr>
-                        <th id="sort" style="cursor: pointer; width: 20%;">브랜드명</th>
+                        <th style="width: 20%;">브랜드명</th>
                         <th style="width: 10%;">모델</th>
                         <th style="width: 10%;">일일기준요금</th>
                         <th style="width: 10%;">주중 특별가</th>
