@@ -2,7 +2,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="lib/jquery.min.js"></script>
+<script></script>
 	<style>
         html, body, h1 {
             margin: 0;
@@ -98,11 +100,11 @@
             transition: 1s;
         }
         
-        input[type="radio"] {
+        #pos1, #pos2 {
             display: none;
         }
         
-        label{
+        .div2 label{
             display: inline-block;
             background:#868b8a;
             color:white;
@@ -119,12 +121,12 @@
             margin-right: calc(100% / 6);
         }
         
-        label:hover{
+        .div2 label:hover{
             background:white;
             color:black;
         }
         
-        label:before,label:after{
+        .div2 label:before, .div2 label:after{
             content:'';
             position:absolute;
             top:0;
@@ -135,14 +137,14 @@
             transition:400ms ease all;
         }
         
-        label:after{
+        .div2 label:after{
             right:inherit;
             top:inherit;
             left:0;
             bottom:0;
         }
         
-        label:hover:before,label:hover:after{
+        .div2 label:hover:before, .div2 label:hover:after{
             width:100%;
             transition:800ms ease all;
         }
@@ -413,6 +415,9 @@
             font-family: "Caviar_Dreams";
             src: url(Caviar-Dreams/CaviarDreams.ttf) format('truetype');
         }
+        
+        @media screen and (min-width:710px)
+        @media screen and (min-width:1000px)
     </style>
 </head>
 <body>
