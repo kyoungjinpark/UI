@@ -5,22 +5,33 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="lib/jquery.min.js"></script>
 <script>
-    $(document).ready(function(){
-        var i = 0;
-        $("#bi6head2").click(function(){
-            i = i + 1;
-            if(i == 1){
-                $("#table1").css("display", "none");
-                $("#table2").css("display", "block");
-            }else if(i == 2){
-                $("#table2").css("display", "none");
-                $("#table3").css("display", "block");
-            }else if(i == 3){
-                $("#table3").css("display", "none");
-                $("#table1").css("display", "block");
-                i = 0;
+    $(document).ready(function(){ 
+        $(window).resize(function(){
+            var m = matchMedia("only screen and (max-width:710px)");
+            if(m.matches == true){
+                    $("#table2").css("display", "none");
+                    $("#table3").css("display", "none");
+                var i = 0;
+                $("#bi6head2").click(function(){
+                    i = i + 1;
+                    if(i == 1){
+                        $("#table1").css("display", "none");
+                        $("#table2").css("display", "block");
+                    }else if(i == 2){
+                        $("#table2").css("display", "none");
+                        $("#table3").css("display", "block");
+                    }else if(i == 3){
+                        $("#table3").css("display", "none");
+                        $("#table1").css("display", "block");
+                        i = 0;
+                    }
+                });
+            }else{
+                    $("#table1").css("display", "block");
+                    $("#table2").css("display", "block");
+                    $("#table3").css("display", "block");
             }
-        })
+        });
     });
 </script>
 	<style>
