@@ -76,7 +76,7 @@
         #bi1{
             background-image: url(new2.jpg);
             width: 100%;
-            height: 400px;
+            height: 500px;
         }
 
 /*************************************************************************************/
@@ -105,7 +105,7 @@
         }
         
         .div2{
-            margin-top: 5%;
+            margin-top: 10%;
             height: 400px;
             position: relative;
             overflow: hidden;
@@ -262,6 +262,7 @@
         #div3 div:hover{
             background-color: #c6c6c6;
             color: black;
+            cursor: pointer;
         }
 /*************************************************************************************/
         
@@ -349,6 +350,10 @@
             font-size: 40px;
             text-align: center;
             padding-top: 15px;
+        }
+        
+        #mh2{
+            display: none;
         }
         
         .you{
@@ -453,7 +458,7 @@
             color: firebrick;
             font-family: "Avenir Next", Avenir, 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif;
             font-size: 30px;
-            padding: 30px 0 30px 0;
+            padding: 30px 0;
         }
 
         .pricing-type {
@@ -503,7 +508,7 @@
 /*************************************************************************************/
         @font-face{
             font-family: "Caviar_Dreams";
-            src: url(Caviar-Dreams/CaviarDreams.ttf, Caviar-Dreams/CaviarDreamsBold.ttf) format('truetype');
+            src: url(CaviarDreams.ttf, CaviarDreamsBold.ttf) format('truetype');
         }
 /*************************************************************************************/
         @media screen and (max-width:1000px){
@@ -859,14 +864,46 @@
                17%, 37%, 57%, 77%, 97% { width:100%; opacity:0.3; }
                18%, 38%, 58%, 78%, 98% { width:100%; opacity:0; }	
             }            
-            #bi5{
+         
+            #bi5 h1, p{
                 display: none;
             }
+            
+            .you {
+                width: 90%;
+            }
+            
+            #bi5{
+                height: 723px;
+            }
+            
+            #mh{
+                display: none;
+            }
+            
+            #mh2 {
+                display: block;
+                text-align: center;
+                font-size: 30px;
+                padding: 0;
+                margin: 0;
+            }
+            
+            .you iframe{
+                display: flex;
+                width: 100%;
+                height: 300px;
+            }
+            
             #bi3{
                 display: none;
             }
             #bi4{
                 display: none;
+            }
+            
+            #bi6{
+                height: 510px;
             }
             
             #bi6head {
@@ -885,7 +922,14 @@
             }
             
             #bi6head2 h1{
-                font-size: 30px;
+                font-size: 25px;
+                padding: 0;
+                margin: 0;
+            }
+            
+            #bi6head2 p{
+                padding: 0;
+                margin: ;
             }
             
             #table2{
@@ -896,12 +940,37 @@
                 display: none;
             }
             
+            
             .pricing-area{
                 display: grid;
             }
             
+            .pricing-title{
+                font-size: 25px;
+                padding: 5px 0;
+            }
+            
+            .price{
+                padding: 5px 0;
+            }
+            
             .pricing-table{
                 width: 70vw;
+                height: 430px;
+                padding: 0;
+            }
+            .btn-plan{
+                margin-top: 60px;
+            }
+            
+            .pricing-details{
+                font-size: 18px;
+                padding: 0;
+                padding-bottom: 5px;
+            }
+            
+            .pricing-details li{
+                padding: 7px 0;
             }
         }
     </style>
@@ -917,7 +986,7 @@
             <section id="bi2" class="bimg">
                 <article>
                    <div id="div1">
-                    <h1>The Shareing System</h1>
+                    <h1>Vánity Fáir Present</h1>
                     <p>Vánity Fáir was founded 2018. Our company is the shareing company which provides our customers with the best product used th best reliability and the best quality. We directly verification, negotiation, and sell in order to remove the bubbles. Vánity Fáir corporation's heart is always for customers in all ages. We have been preparing "Elegant" for a road shop like fairytale and we also provide good quality and unique product item's so that we can take one step closer to you. please give us your interest and support. Vánity Fáir all workers. </p>
                     </div>
                     <div class="div2">
@@ -971,7 +1040,7 @@
                         </ul>
                     </div>
                     <div class="container">
-                        <h1>Items</h1>
+                        <h1>New Products</h1>
                         <hr>
                         <div id="content-slider">
                             <div id="slider">
@@ -1008,9 +1077,11 @@
 
             <section id="bi5">
                 <article>
-                   <h1 id="mh">Making Film</h1>
-                    <div class="you"><iframe width="560" height="100%" src="https://www.youtube.com/embed/j5eif94JRbc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
-                    <div class="you"><iframe width="560" height="100%" src="https://www.youtube.com/embed/jIpBsbzuiHA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+                    <h1 id="mh">Making Film</h1>
+                    <h2 id="mh2">Making Film</h2>
+                    <hr>
+                    <div class="you"><iframe height="100%" src="https://www.youtube.com/embed/j5eif94JRbc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+                    <div class="you"><iframe height="100%" src="https://www.youtube.com/embed/jIpBsbzuiHA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
                     <div class="me">
                         <h1>Patek Philippe</h1>
                         <p>Patek Philippe has been pursuing traditional Genevan watchmaking artistry without interruption since 1839.</p>
@@ -1089,8 +1160,7 @@
                     <h2> - You need this favor - </h2>
                     </div>
                     <div id="bi6head2">
-                    <h1>Membership</h1>
-                    <h2> (Click ME!) </h2>
+                    <h1>Membership<br>(click me)</h1>
                     </div>
                     <div class="pricing-area">
                         <div class="pricing-table" id="table1">

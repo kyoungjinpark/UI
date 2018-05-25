@@ -24,11 +24,13 @@ h2 {
 @font-face{font-family:'CaviarDreams'; src:url('CaviarDreams.ttf')}
 
 #body {
-    font-family: "CaviarDreams";
-    min-width: 800px;  
+    font-family: "CaviarDreams";    
     animation-name: process;
     animation-duration: 4s;
     animation-iteration-count: 1;
+}
+#bsec {
+    min-width: 800px;  
 }
 #div1 {
     display: inline-block;
@@ -71,14 +73,16 @@ h2 {
   50% {    
     background: rgba(92, 11, 11, 0.4); 
   }
-  100% {         
+  100% {    
+     
   }    
 }  
+
 table {
-    min-width: 600px;
+    min-width: 360px;
     padding: 0 10px;
     border-color: lightgray;
-    width: auto;
+    /*width: auto;*/
     font-size: 13px;
     text-align: center;
 }
@@ -86,7 +90,7 @@ th {
     padding: 0;
     border-style: solid;    
     border-color: lightgray;
-    width: auto;
+    /*width: auto;*/
     font-size: 13px;
 }
 td {
@@ -94,7 +98,10 @@ td {
     border-color: lightgray; 
     font-size: 13px;
 }
+
 #footer img{
     padding-top: 60px;
-    width: 100%;    
+    width: 100%;
+    
 }
+
