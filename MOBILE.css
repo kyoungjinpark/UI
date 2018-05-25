@@ -76,3 +76,17 @@ footer #qna{
     width: 100%;
     margin: 0;
 }
+
+#fo1{
+    width: 100%;
+    font-size: 12.5px;
+}
+
+#fo1 div{
+    margin-top: 3%;
+    margin-left: 0;
+}
+
+#fo2{
+    display: none;
+}
