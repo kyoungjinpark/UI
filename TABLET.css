@@ -21,7 +21,7 @@
 /* 하단 */
 footer #qna{
     width: 80%;
-    margin: 0 10%;
+    margin: 0; 10%;
 }
 
 #fo1 {
@@ -33,7 +33,6 @@ footer #qna{
 }
 
 #fo1 div{
-    margin-top: 1.8%;
     margin-left: 5%;
     margin-right: 0;
 }
