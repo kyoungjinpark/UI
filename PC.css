@@ -63,14 +63,14 @@ footer ul, footer li{
 }
 
 #fo1 {
-    width: 50%;
+    width: 60%;
     height: 100%;
     float: left;
 }
 
 #fo1 div{
     width: 100%;
-    margin: 0.7% 15%;
+    margin: 3px 20%;
     float: left;
 }
 
@@ -83,7 +83,7 @@ footer ul, footer li{
 }
 
 #fo2 {
-    width: 50%;
+    width: 40%;
     height: 100%;
     float: right;
     text-align: right;
@@ -117,3 +117,4 @@ footer ul, footer li{
     color: black;
     font-weight: bold;
 }
+::-webkit-scrollbar {display:none;}
