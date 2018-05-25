@@ -23,3 +23,21 @@ footer #qna{
     width: 80%;
     margin: 0 10%;
 }
+
+#fo1 {
+    width: 60%;
+}
+
+#fo2{
+    width: 40%;
+}
+
+#fo1 div{
+    margin-top: 1.8%;
+    margin-left: 5%;
+    margin-right: 0;
+}
+
+#fo2 img{
+    width: 70%;
+}
